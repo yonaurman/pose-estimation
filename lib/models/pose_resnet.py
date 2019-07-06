@@ -260,7 +260,7 @@ resnet_spec = {
 
 def get_pose_net(cfg, is_train, **kwargs):
     num_layers = cfg.MODEL.EXTRA.NUM_LAYERS
-
+    print("In Get Post Net ")
     block_class, layers = resnet_spec[num_layers]
 
     model = PoseResNet(block_class, layers, cfg, **kwargs)
