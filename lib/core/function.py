@@ -116,7 +116,7 @@ def validate(config, val_loader, val_dataset, model, criterion, output_dir,
     with torch.no_grad():
         end = time.time()
         for i, (input, target, target_weight, meta) in enumerate(val_loader):
-            print("!!!!!!In validate fucntion")
+            print("!!!!!!In validate function!!!!!!!!!")
             print(input.shape)
             # compute output
             outputs = model(input)
